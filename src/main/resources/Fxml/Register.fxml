@@ -35,7 +35,7 @@
                </VBox.margin>
             </Label>
             <PasswordField fx:id="repeat_password_field" layoutX="10.0" layoutY="135.0" />
-                <Button mnemonicParsing="false" text="Registruotis">
+                <Button fx:id="register_btn" mnemonicParsing="false" text="Registruotis">
                     <VBox.margin>
                         <Insets top="20.0" />
                     </VBox.margin>

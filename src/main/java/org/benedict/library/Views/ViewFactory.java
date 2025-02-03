@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.benedict.library.Controllers.RouteController;
 
 import java.util.concurrent.ExecutionException;
 
@@ -64,6 +65,9 @@ public class ViewFactory {
      */
     public void showMainWindow(){
          FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Main.fxml"));
+        RouteController controller = new RouteController();
+        loader.setController(controller);
+        createStage(loader);
 
     }
 
